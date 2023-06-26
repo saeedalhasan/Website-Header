@@ -17,13 +17,12 @@
                 <li><a href="">Contemporary</a></li>
                 <li><a href="">Affordable</a></li>
             </ul>
-            <button type="button"><span></span></button>
+            <button type="button" onclick="toggleBtn()" id="btn"><span></span></button>
         </nav>
 
         <div class="lamp-container">
             <img src="images/lamp.png" class="lamp">
-            <img src="images/light.png" class="light">
-            
+            <img src="images/light.png" class="light">          
         </div>
 
         <div class="text-container">
@@ -37,5 +36,13 @@
             </div>
         </div>
     </div>
+
+    <script>
+        var btn = document.getElementById("btn");
+
+        function toggleBtn(){
+            btn.classList.toggle("active");
+        }
+    </script>
 </body>
 </html>
