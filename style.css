@@ -81,6 +81,7 @@ button span{
     width: 700px;
     margin-left: -10px;
     opacity: 0;   /*hide the light*/
+    transition: opacity 0.5s;
 }
 
 /*side text*/
@@ -131,6 +132,7 @@ button span{
     display: block;
 }
 
+/*js*/
 .active{
     background: green;
 }
@@ -138,6 +140,6 @@ button span{
     background:#fff;
     margin-left: 31px;
 }
-.active .light{
+.on{
     opacity: 1;
 }
